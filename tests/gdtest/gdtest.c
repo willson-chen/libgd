@@ -1,4 +1,6 @@
+#ifdef HAVE_CONFIG_H
 #include <config.h>
+#enif
 #include <assert.h>
 #include <setjmp.h>
 #include <stdlib.h>
