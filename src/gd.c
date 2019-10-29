@@ -3488,7 +3488,7 @@ BGD_DECLARE(void) gdImageCopyResampled (gdImagePtr dst,
 			do {
 				double yportion;
 				if (floorf(sy) == floorf(sy1)) {
-					yportion = 1.0f - (sy - floorf(sy));
+					yportion = 1.0 - (sy - floorf(sy));
 					if (yportion > sy2 - sy1) {
 						yportion = sy2 - sy1;
 					}
@@ -3496,7 +3496,7 @@ BGD_DECLARE(void) gdImageCopyResampled (gdImagePtr dst,
 				} else if (sy == floorf(sy2)) {
 					yportion = sy2 - floorf(sy2);
 				} else {
-					yportion = 1.0f;
+					yportion = 1.0;
 				}
 				sx1 = ((double)(x - dstX)) * (double) srcW / dstW;
 				sx2 = ((double)(x + 1 - dstX)) * (double) srcW / dstW;
@@ -3506,7 +3506,7 @@ BGD_DECLARE(void) gdImageCopyResampled (gdImagePtr dst,
 					double pcontribution;
 					int p;
 					if (floorf(sx) == floorf(sx1)) {
-						xportion = 1.0f - (sx - floorf(sx));
+						xportion = 1.0 - (sx - floorf(sx));
 						if (xportion > sx2 - sx1) {
 							xportion = sx2 - sx1;
 						}
@@ -3514,7 +3514,7 @@ BGD_DECLARE(void) gdImageCopyResampled (gdImagePtr dst,
 					} else if (sx == floorf(sx2)) {
 						xportion = sx2 - floorf(sx2);
 					} else {
-						xportion = 1.0f;
+						xportion = 1.0;
 					}
 					pcontribution = xportion * yportion;
 					p = gdImageGetTrueColorPixel(src, (int) sx + srcX, (int) sy + srcY);
@@ -3527,10 +3527,10 @@ BGD_DECLARE(void) gdImageCopyResampled (gdImagePtr dst,
 					alpha_sum += alpha_factor;
 					contrib_sum += pcontribution;
 					spixels += xportion * yportion;
-					sx += 1.0f;
+					sx += 1.0;
 				}
 				while (sx < sx2);
-				sy += 1.0f;
+				sy += 1.0;
 			}
 			while (sy < sy2);
 
