@@ -65,6 +65,8 @@ static const unsigned char gd_toascii[256] = {
 	0x38, 0x39, 0xb3, 0x7b, 0xdc, 0x7d, 0xda, 0x7e	/*0123456789.{.}.~ */
 };
 #endif /*CHARSET_EBCDIC */
+/* 2.0.10: cast instead of floor() yields 35% performance improvement. Thanks to John Buckman. */
+#define floorf(exp) ((long) exp)
 
 extern const int gdCosT[];
 extern const int gdSinT[];
