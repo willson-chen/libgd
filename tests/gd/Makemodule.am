@@ -1,5 +1,6 @@
 libgd_test_programs += \
-	gd/gd_versiontest
+	gd/gd_versiontest \
+	gd/gd_dashed_line
 
 if ENABLE_GD_FORMATS
 libgd_test_programs += \
@@ -16,4 +17,5 @@ endif
 EXTRA_DIST += \
 	gd/bug00383.gd \
 	gd/crafted_num_colors.gd \
-	gd/CMakeLists.txt
+	gd/CMakeLists.txt \
+	gd/test.png

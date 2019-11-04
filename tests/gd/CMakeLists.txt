@@ -1,5 +1,6 @@
 LIST(APPEND TESTS_FILES
 	gd_versiontest
+	gd_dashed_line
 )
 
 IF(ENABLE_GD_FORMATS)
