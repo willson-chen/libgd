@@ -12,6 +12,7 @@ LIST(APPEND TESTS_FILES
 	gdimageline_bug5
 	gdImageAALine_thickness
 	github_bug_167
+	gdimagedashedline
 )
 ENDIF(PNG_FOUND)
 

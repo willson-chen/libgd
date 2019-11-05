@@ -10,7 +10,8 @@ libgd_test_programs += \
 	gdimageline/gdimageline_aa \
 	gdimageline/gdimageline_bug5 \
 	gdimageline/gdImageAALine_thickness \
-	gdimageline/github_bug_167
+	gdimageline/github_bug_167 \
+	gdimageline/gdimagedashedline
 endif
 
 EXTRA_DIST += \
@@ -28,4 +29,5 @@ EXTRA_DIST += \
 	gdimageline/gdimageline_aa_a_0_exp.png \
 	gdimageline/gdimageline_aa_b_1_exp.png \
 	gdimageline/gdImageAALine_thickness_exp.png \
-	gdimageline/github_bug_167_exp.png
+	gdimageline/github_bug_167_exp.png \
+	gdimageline/gdimagedashedline_exp.png

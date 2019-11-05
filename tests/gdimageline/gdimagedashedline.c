@@ -3,7 +3,7 @@
 
 int main()
 {
-gdImagePtr im;
+	gdImagePtr im;
 	im = gdImageCreate(64,64);
 	int white;
 
@@ -12,6 +12,7 @@ gdImagePtr im;
 	white = gdImageColorAllocate(im, 255, 255, 255);
 	gdImageDashedLine(im, 0, 64, 64, 0, white);
 	gdImageDashedLine(im, 0, 0, 10, 63, white);
+	// generate png file code
 	//FILE *pngout;
 	//pngout = fopen("gd/test.png", "wb");
 	//pngout = gdTestFileOpen2("gd", "test.png");
