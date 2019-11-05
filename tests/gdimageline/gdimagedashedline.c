@@ -19,7 +19,7 @@ int main()
 	//gdImagePng(im, pngout);
 	//fclose(pngout);
 
-	gdAssertImageEqualsToFile("gd/test.png", im);
+	gdAssertImageEqualsToFile("gdimageline/gdimagedashedline_exp.png", im);
 
 	gdImageDestroy(im);
 	return 0;
