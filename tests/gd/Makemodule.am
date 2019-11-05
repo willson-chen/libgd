@@ -1,5 +1,5 @@
 libgd_test_programs += \
-	gd/gd_versiontest 
+	gd/gd_versiontest
 
 if ENABLE_GD_FORMATS
 libgd_test_programs += \
