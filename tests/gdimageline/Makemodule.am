@@ -1,6 +1,5 @@
 libgd_test_programs += \
 	gdimageline/gdimageline_aa_outofrange
-
 if HAVE_LIBPNG
 libgd_test_programs += \
 	gdimageline/bug00072 \
