@@ -32,7 +32,7 @@ void fromGd2PartTest(int a, int b, int c, int d) {
 			perror("fopen");
 			exit (1);
 		}
-		gdImagePtr im1 = gdImageCreateFromGd2Part(fp, a, b, c, d); 
+		gdImagePtr im1 = gdImageCreateFromGd2Part(fp, a, b, c, d);
 		if (im1) gdImageDestroy(im1);
 	}
 	if (im) gdImageDestroy(im);
