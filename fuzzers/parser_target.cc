@@ -46,7 +46,7 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
 		int m = Data[0] % 2;
 		Data +=4;
 		Size -=4;
-		
+
 		gdImagePtr im = CREATE_IMAGE(FUZZ_GD_FORMAT)(Size, (void*) Data);
 		if (im) {
 			gdImageGetPixel(im, x, y);
