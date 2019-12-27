@@ -104,7 +104,6 @@ build_cmake() {
 		-DENABLE_PNG=1
 		-DENABLE_TIFF=1
 		-DENABLE_WEBP=1
-		-DENABLE_XPM=1
 		-DENABLE_ZLIB=1
 	)
 
