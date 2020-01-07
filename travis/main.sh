@@ -107,9 +107,10 @@ build_cmake() {
 		-DENABLE_ZLIB=1
 	)
 	
+    # libxpm-dev is unavaible in brew repo
+    # Once it gets avaible, please modify this code block.
 	if [ "${TRAVIS_OS_NAME}" == "linux" ]; then
 		args[${#args[@]}]="-DENABLE_XPM=1"
-		args[${#args[@]}]="-DENABLE_RAQM=1"
 	fi
 
 	# First try building out of tree.
