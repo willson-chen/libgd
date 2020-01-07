@@ -106,6 +106,11 @@ build_cmake() {
 		-DENABLE_WEBP=1
 		-DENABLE_ZLIB=1
 	)
+	
+	if [ "${TRAVIS_OS_NAME}" == "linux" ]; then
+		args[${#args[@]}]="-DENABLE_XPM=1"
+		args[${#args[@]}]="-DENABLE_RAQM=1"
+	fi
 
 	# First try building out of tree.
 	mkdir build
