@@ -106,7 +106,7 @@ build_cmake() {
 		-DENABLE_WEBP=1
 		-DENABLE_ZLIB=1
 	)
-	
+
     # libxpm-dev is unavaible in brew repo
     # Once it gets avaible, please modify this code block.
 	if [ "${TRAVIS_OS_NAME}" == "linux" ]; then
