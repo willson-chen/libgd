@@ -41,5 +41,5 @@ addons:
     - automake
     - autoconf
     - libtool
-	- libraqm-dev
+    - libraqm-dev
     - html2text
